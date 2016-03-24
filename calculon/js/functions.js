@@ -66,9 +66,8 @@ $resolver.click(function(event) {
     precisao = parseFloat(precisao);
     a.val = parseFloat(a.val);
     b.val = parseFloat(b.val);
-                        console.log(dif(a.val,b.val));
-                        console.log(precisao);
-                        //dif(a.val,b.val) > precisao
+
+        //Bisseção
         for (var k = 0; dif(a.val,b.val) > precisao ; k++) {
                 //console.log(k+" a["+k+"] | b["+k+"] |  x["+k+"] |  f[x"+k+"] |  b["+k+"] -  a["+k+"] ");
                 $resultado.append('<tr><td>'+k +'</td><td>'+a.val+'</td><td>'+b.val+'</td><td>'+pontoMedio(a.val,b.val)+'</td><td>'+ funcaoNoPonto(cleanFunction,pontoMedio(a.val,b.val))+'</td><td>'+dif(a.val,b.val)+'</td></tr>');
