@@ -2,6 +2,7 @@
 $funcao = $('#funcao');
 $precisao = $('#precisao');
 $resolver = $('#resolver');
+$resultado = $('#exibirResultados');
 
 function funcaoNoPonto(func,x){
 
@@ -18,11 +19,11 @@ function pontoMedio(a,b){
 }
 
 
-function dif(a,b){
-   if(a-b<0)
-    return b-a;
+function dif(x,y){
+   if(x-y<0)
+    return y-x;
    else
-    return a-b;
+    return x-y;
 }
 
 function parseFunction(func,ret){
@@ -65,10 +66,12 @@ $resolver.click(function(event) {
     precisao = parseFloat(precisao);
     a.val = parseFloat(a.val);
     b.val = parseFloat(b.val);
-
+                        console.log(dif(a.val,b.val));
+                        console.log(precisao);
+                        //dif(a.val,b.val) > precisao
         for (var k = 0; dif(a.val,b.val) > precisao ; k++) {
                 //console.log(k+" a["+k+"] | b["+k+"] |  x["+k+"] |  f[x"+k+"] |  b["+k+"] -  a["+k+"] ");
-                console.log(k +" | "+a+" | "+b+" | "+ pontoMedio(a.val,b.val)+" | "+ funcaoNoPonto(cleanFunction,pontoMedio(a.val,b.val))+" | "+dif(a.val,b.val));
+                $resultado.append('<tr><td>'+k +'</td><td>'+a.val+'</td><td>'+b.val+'</td><td>'+pontoMedio(a.val,b.val)+'</td><td>'+ funcaoNoPonto(cleanFunction,pontoMedio(a.val,b.val))+'</td><td>'+dif(a.val,b.val)+'</td></tr>');
 
                 if((funcaoNoPonto(cleanFunction,a.val)*funcaoNoPonto(cleanFunction,pontoMedio(a.val,b.val)))< 0)
                     b.val= pontoMedio(a.val,b.val);

@@ -49,11 +49,31 @@
                 </div>
 
 
-                    <button id="resolver" type="button" class="btn btn-primary col-lg-6 col-lg-offset-3" >Resolver </span></button>
+                    <button id="resolver" type="button" class="btn btn-primary col-lg-6 col-lg-offset-3" data-toggle="modal" data-target="#resultado">Resolver </span></button>
 
         </div>
     </header>
+        <!-- Modal -->
+        <div class="modal fade" id="resultado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Resultado</h4>
+              </div>
+              <div  class="modal-body">
+                <div class="table-responsive">
+                    <table style="width:100%" id="exibirResultados">
 
+                    </table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
     <!-- jQuery -->
