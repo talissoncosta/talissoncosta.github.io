@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url(./assets//fonts/static/HankenGrotesk-Medium.ttf);
+}
+body {
+    font-family: 'Hanken Grotesk';
+}
+.bg {
+  background-color: #D9F3FB;
+}
+.bg-result {
+  background: linear-gradient(188.6deg, #7857FF 3.11%, #2E2BE9 76.94%);
+}
+.bg-stats-result {
+  background: linear-gradient(188.6deg, #7857FF 3.11%, #2E2BE9 76.94%);
+}
+.full-card {
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.08));
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
