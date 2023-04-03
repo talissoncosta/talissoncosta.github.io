@@ -6,7 +6,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-![Result summary component with Tailwind](<img width="639" alt="image" src="https://user-images.githubusercontent.com/2528597/229515683-3a8f861b-7816-41d6-9eb5-fcaa9db592a3.png">)
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/2528597/229515683-3a8f861b-7816-41d6-9eb5-fcaa9db592a3.png" />
 
 ### The challenge
 
