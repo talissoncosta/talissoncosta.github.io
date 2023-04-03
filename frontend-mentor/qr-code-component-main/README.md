@@ -1,12 +1,12 @@
-# Frontend Mentor - Results summary component solution
+# Frontend Mentor - QR code component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.  
 
 ## Overview
 
 ### Screenshot
 
-![image](https://user-images.githubusercontent.com/2528597/229587939-693fb1ba-b18f-49dc-9d21-6c3824d0d35d.png)
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/2528597/229515683-3a8f861b-7816-41d6-9eb5-fcaa9db592a3.png" />
 
 ### The challenge
 
@@ -14,8 +14,8 @@ This is a simple project that uses only HTML and Tailwind CSS.
 
 ### Links
 
-- Solution URL: [QR Code component with Tailwind](https://github.com/talissoncosta/talissoncosta.github.io/blob/master/frontend-mentor/results-summary-component)
-- Live Site URL: [QR Code component with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/results-summary-component/index.html)
+- Solution URL: [QR Code component with Tailwind](https://github.com/talissoncosta/talissoncosta.github.io/blob/master/frontend-mentor/qr-code-component-main)
+- Live Site URL: [QR Code component with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/qr-code-component-main/index.html)
 
 ## My process
 
