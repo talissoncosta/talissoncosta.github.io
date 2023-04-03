@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(./assets/outfit/static/Outfit-Medium.ttf);
+}
+body {
+  font-family: 'Outfit';
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
