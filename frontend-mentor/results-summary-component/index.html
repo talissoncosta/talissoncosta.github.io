@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href='https://fonts.googleapis.com/css?family=Hanken Grotesk' rel='stylesheet'>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <style>
@@ -27,6 +28,7 @@
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
 </style>
+
 <body>
   <div class="flex bg w-full min-h-screen">
     <div class="full-card flex flex-col m-auto min-[375px]:flex-row rounded-lg bg-white ">
@@ -47,50 +49,9 @@
           </div>
         </div>
       </div>
-      <div class="flex p-7 sm:w-60 flex-col rounded-tr-lg rounded-br-lg gap-4">
+      <div id="summary" class="flex p-7 sm:w-60 flex-col rounded-tr-lg rounded-br-lg gap-4">
         <h1 class="font-bold">Summary</h1>
-        <div class="flex flex-col gap-4">
-          <div class="flex justify-between bg-red-100 p-2 rounded-lg items-center font-bold text-xs">
-            <div class="text-red-500 flex gap-2">
-              <img class="w-4 h-4" src = "./assets/images/icon-reaction.svg" alt="Icon reaction"/>
-              <span>Reaction</span>
-            </div>
-            <div>
-              <span>80</span>
-              <span class="text-gray-600">/100</span>
-            </div>
-          </div>
-          <div class="flex justify-between bg-yellow-100 p-2 rounded-lg items-center font-bold text-xs">
-            <div class="text-yellow-500 flex gap-2">
-              <img class="w-4 h-4" src = "./assets/images/icon-memory.svg" alt="Icon memory"/>
-              <span>Memory</span>
-            </div>
-            <div>
-              <span>92</span>
-              <span class="text-gray-600">/100</span>
-            </div>
-          </div>
-          <div class="flex justify-between bg-green-100 p-2 rounded-lg items-center font-bold text-xs">
-            <div class="text-green-500 flex gap-2">
-              <img class="w-4 h-4" src = "./assets/images/icon-verbal.svg" alt="Icon verbal"/>
-              <span>Verbal</span>
-            </div>
-            <div>
-              <span>61</span>
-              <span class="text-gray-600">/100</span>
-            </div>
-          </div>
-          <div class="flex justify-between bg-blue-100 p-2 rounded-lg items-center font-bold text-xs">
-            <div class="text-blue-500 flex gap-2">
-              <img class="w-4 h-4" src = "./assets/images/icon-visual.svg" alt="Icon visual"/>
-              <span>Visual</span>
-            </div>
-            <div>
-              <span>72</span>
-              <span class="text-gray-600">/100</span>
-            </div>
-          </div>
-        </div>
+        <div id="summary-stats" class="flex flex-col gap-4"></div>
         <button class="w-full bg-blue-950 text-white rounded-full p-2 hover:bg-[#2F2CEA] text-xs">
           Continue
         </button>
@@ -102,4 +63,72 @@
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
   Coded by <a href="https://talissoncosta.github.io/">Talisson Costa</a>.
 </footer>
+<script>
+  var data = [
+    {
+      "category": "Reaction",
+      "score": 80,
+      "icon": "./assets/images/icon-reaction.svg"
+    },
+    {
+      "category": "Memory",
+      "score": 92,
+      "icon": "./assets/images/icon-memory.svg"
+    },
+    {
+      "category": "Verbal",
+      "score": 61,
+      "icon": "./assets/images/icon-verbal.svg"
+    },
+    {
+      "category": "Visual",
+      "score": 72,
+      "icon": "./assets/images/icon-visual.svg"
+    }
+  ]
+
+  const resultStats = document.createElement("div");
+
+  resultStats.className = "result-stats flex flex-col gap-4";
+    const getColor = (category) => {
+      var colors = {
+        'Reaction': {
+          bgColor: 'bg-red-100',
+          textColor: 'text-red-500'
+        },
+        'Memory': {
+          bgColor: 'bg-yellow-100',
+          textColor: 'text-yellow-500'
+        },
+        'Verbal': {
+          bgColor: 'bg-green-100',
+          textColor: 'text-green-500'
+        },
+        'Visual': {
+          bgColor: 'bg-blue-100',
+          textColor: 'text-blue-500'
+        }
+      }
+      return colors[category]
+    }
+  data.forEach((entry) => {
+    const element = document.createElement("div");
+    const {bgColor, textColor} = getColor(entry.category);
+
+    element.innerHTML = `
+        <div class="flex justify-between ${bgColor} p-2 rounded-lg items-center font-bold text-xs">
+          <div class="${textColor} flex gap-2">
+            <img class="w-4 h-4" src = "${entry.icon}" alt="Icon ${data.category}"/>
+            <span>${entry.category}</span>
+          </div>
+          <div>
+            <span>${entry.score}</span>
+            <span class="text-gray-600">/100</span>
+          </div>
+        </div>
+    `
+    document.getElementById('summary-stats').appendChild(element)
+  });
+
+</script>
 </html>
