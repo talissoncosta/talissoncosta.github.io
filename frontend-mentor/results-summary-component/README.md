@@ -6,7 +6,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Result summary component with Tailwind](<img width="639" alt="image" src="https://user-images.githubusercontent.com/2528597/229515683-3a8f861b-7816-41d6-9eb5-fcaa9db592a3.png">)
 
 ### The challenge
 
@@ -15,7 +15,7 @@ This is a simple project that uses only HTML and CSS. I decided to use a tool th
 ### Links
 
 - Solution URL: [Results summary component with Tailwind](https://github.com/talissoncosta/talissoncosta.github.io/blob/master/frontend-mentor/results-summary-component)
-- Live Site URL: [esults summary component with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/results-summary-component/index.html)
+- Live Site URL: [Results summary component with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/results-summary-component/index.html)
 
 ## My process
 
