@@ -6,7 +6,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-<img width="639" alt="image" src="https://user-images.githubusercontent.com/2528597/229515683-3a8f861b-7816-41d6-9eb5-fcaa9db592a3.png" />
+![image](https://user-images.githubusercontent.com/2528597/229587939-693fb1ba-b18f-49dc-9d21-6c3824d0d35d.png)
 
 ### The challenge
 
