@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Hanken Grotesk' rel='stylesheet'>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <style>
+  @font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(./assets//fonts/static/HankenGrotesk-Medium.ttf);
+  }
   body {
       font-family: 'Hanken Grotesk';
   }
@@ -30,39 +33,41 @@
 </style>
 
 <body>
-  <div class="flex bg w-full min-h-screen">
-    <div class="full-card flex flex-col m-auto min-[375px]:flex-row rounded-lg bg-white ">
-      <div class="bg-result flex flex-col p-7 bg-blue-200 min-[375px]:w-60 items-center rounded-lg gap-8">
-        <h1 class="text-base font-extrabold text-gray-400">Your result</h1>
-        <div class="bg-stats-result flex items-center flex-col justify-center rounded-full text-center w-28 h-28">
-          <div class="text-5xl text-white">76</div>
-          <div class="text-gray-500 text-xs font-bold">of 100</div>
-        </div>
-        <div class="flex flex-col gap-3 items-center">
-          <div class="text-white font-bold text-xl">
-            Great
+  <main role="main">
+    <div class="flex bg w-full min-h-screen">
+      <div class="full-card flex flex-col m-auto min-[375px]:flex-row rounded-lg bg-white ">
+        <div class="bg-result flex flex-col p-7 bg-blue-200 min-[375px]:w-60 items-center rounded-lg gap-8">
+          <h1 class="text-base font-extrabold text-gray-400">Your result</h1>
+          <div class="bg-stats-result flex items-center flex-col justify-center rounded-full text-center w-28 h-28">
+            <div class="text-5xl text-white">76</div>
+            <div class="text-gray-500 text-xs font-bold">of 100</div>
           </div>
-          <div class="text-xs text-center font-bold text-gray-300">
-            You scored higher than 65% of
-              the people  who have taken
-              these tests.
+          <div class="flex flex-col gap-3 items-center">
+            <div class="text-white font-bold text-xl">
+              Great
+            </div>
+            <div class="text-xs text-center font-bold text-gray-300">
+              You scored higher than 65% of
+                the people  who have taken
+                these tests.
+            </div>
           </div>
         </div>
-      </div>
-      <div id="summary" class="flex p-7 sm:w-60 flex-col rounded-tr-lg rounded-br-lg gap-4">
-        <h1 class="font-bold">Summary</h1>
-        <div id="summary-stats" class="flex flex-col gap-4"></div>
-        <button class="w-full bg-blue-950 text-white rounded-full p-2 hover:bg-[#2F2CEA] text-xs">
-          Continue
-        </button>
+        <div id="summary" class="flex p-7 sm:w-60 flex-col rounded-tr-lg rounded-br-lg gap-4">
+          <h1 class="font-bold">Summary</h1>
+          <div id="summary-stats" class="flex flex-col gap-4"></div>
+          <button class="w-full bg-blue-950 text-white rounded-full p-2 hover:bg-[#2F2CEA] text-xs">
+            Continue
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://talissoncosta.github.io/">Talisson Costa</a>.
+  </footer>
 </body>
-<footer class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="https://talissoncosta.github.io/">Talisson Costa</a>.
-</footer>
 <script>
   var data = [
     {
