@@ -29,7 +29,7 @@ My girlfriend is learning UI design. So, she replicated the [design](https://www
 
 ### What I learned
 
-The second small project working with Tailwind CSS, now I see how it is powerful and how you get used to the sintax. It just come on your mind and you just need to make it happen.
+The second small project working with Tailwind CSS, now I see how it is powerful and how you get used to the syntax. It just come on your mind and you just need to make it happen.
 
 ## Author
 
