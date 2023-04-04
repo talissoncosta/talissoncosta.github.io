@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url(./assets/font/static/Manrope-Regular.ttf);
+}
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
