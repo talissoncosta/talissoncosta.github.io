@@ -14,8 +14,8 @@ This is a simple project that uses only HTML, Tailwind CSS and Vanilla Javascrip
 
 ### Links
 
-- Solution URL: [Advice generator with Tailwind](https://github.com/talissoncosta/talissoncosta.github.io/blob/master/frontend-mentor/qr-code-component-main)
-- Live Site URL: [Advice generator with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/qr-code-component-main/index.html)
+- Solution URL: [Advice generator with Tailwind](https://github.com/talissoncosta/talissoncosta.github.io/tree/master/frontend-mentor/advice-generator-app-main)
+- Live Site URL: [Advice generator with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/advice-generator-app-main/index.html)
 
 ## My process
 
