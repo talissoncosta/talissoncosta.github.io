@@ -6,7 +6,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-<img width="639" alt="image" src="https://user-images.githubusercontent.com/2528597/229515683-3a8f861b-7816-41d6-9eb5-fcaa9db592a3.png" />
+<img width="1227" alt="image" src="https://user-images.githubusercontent.com/2528597/229960199-f1fdbdac-947b-40a9-9c60-459fa5e903e3.png">
 
 ### The challenge
 
