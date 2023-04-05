@@ -14,8 +14,8 @@ This is a simple project that uses only HTML and CSS(Tailwind CSS)
 
 ### Links
 
-- Solution URL: [Product preview card component with Tailwind](https://github.com/talissoncosta/talissoncosta.github.io/blob/master/frontend-mentor/product-preview-card-component)
-- Live Site URL: [Product preview card component with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/product-preview-card-component/index.html)
+- Solution URL: [Product preview card component with Tailwind](https://github.com/talissoncosta/talissoncosta.github.io/blob/master/frontend-mentor/product-preview-card-component-main)
+- Live Site URL: [Product preview card component with Tailwind - Live](https://talissoncosta.github.io/frontend-mentor/product-preview-card-component-main/index.html)
 
 ## My process
 
