@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat/static/Montserrat-Regular.ttf)
+}
+
+body {
+  font-family: 'Montserrat';
+}
+.price, .title {
+  font-family: 'Fraunces';
+  src: url(./assets/fonts/Fraunces/static/Fraunces_72pt/Fraunces_72pt-Regular.ttf)
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
